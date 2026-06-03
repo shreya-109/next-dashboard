@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 
 type Props = {
-  name: string;
+  name?: string;
 };
 
 export default function HeroTile({ name }: Props) {
@@ -13,7 +13,7 @@ export default function HeroTile({ name }: Props) {
       className="col-span-2 bg-white/5 backdrop-blur-lg p-6 rounded-xl border border-white/10 shadow-lg"
     >
       <h1 className="text-2xl font-semibold">
-        Welcome back, {name} 👋
+        Welcome back, {name || "user"} 👋
       </h1>
       <p className="text-sm text-gray-400 mt-2">
       You're doing great — keep learning 🚀

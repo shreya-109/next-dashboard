@@ -1,4 +1,6 @@
+"use client";
 import HeroTile from "./HeroTile";
+import CourseCard from "./CourseCard";  
 export default function BentoGrid() {
   return (
     <section className="grid grid-cols-3 gap-4 p-6 w-full">

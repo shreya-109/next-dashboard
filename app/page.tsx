@@ -1,4 +1,11 @@
-// app/page.tsx
+import Sidebar from "@/components/Sidebar";
+import BentoGrid from "@/components/BentoGrid";
+
 export default function Home() {
-  return <h1>Hello World</h1>; // add a space or comment
+  return (
+    <main className="min-h-screen flex bg-black text-white">
+      <Sidebar />
+      <BentoGrid />
+    </main>
+  );
 }

@@ -49,13 +49,14 @@ npm run dev
 Create a `.env.local` file and add:
 
 ```env
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+NEXT_PUBLIC_SUPABASE_URL=https://gtkgunqjjidfoqcvoqsa.supabase.co/rest/v1/
+NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_eVMobnUzA3P-7A487ddxUQ_7blqr3vJ
 ```
 
 ## Live Demo
 
 Add your Vercel deployment link here.
+https://next-dashboard-tq8w.vercel.app/
 
 ## Author
 

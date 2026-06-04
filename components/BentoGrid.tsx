@@ -1,28 +1,22 @@
 "use client";
-import HeroTile from "./HeroTile";
-import CourseCard from "./CourseCard";  
+
+import CourseCard from "./CourseCard";
+
 export default function BentoGrid() {
+  const courses = [
+    { id: 1, title: "DSA", progress: 70 },
+    { id: 2, title: "Web Dev", progress: 50 },
+  ];
+
   return (
-    <section className="grid grid-cols-3 gap-4 p-6 w-full">
-      <HeroTile name="Shreya" />
-      
-
-      <article className="bg-gray-800 p-6 rounded-xl">
-        Activity
-      </article>
-
-      <article className="bg-gray-800 p-6 rounded-xl">
-        Course 1
-      </article>
-
-      <article className="bg-gray-800 p-6 rounded-xl">
-        Course 2
-      </article>
-
-      <article className="bg-gray-800 p-6 rounded-xl">
-        Course 3
-      </article>
-
-    </section>
+    <>
+      {courses.map((course) => (
+        <CourseCard
+          key={course.id}
+          title={course.title}
+          progress={course.progress}
+        />
+      ))}
+    </>
   );
 }
